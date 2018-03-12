@@ -266,26 +266,24 @@ footer {
     padding: 1rem;
     margin: 0;
 }
-
+.sociallink:hover{
+    color:#fff;
+}
 .contactlink--phone:hover {
     border-radius: 0.5em;
 }
 
 .sociallink--twitter:hover {
     background-color: #1DA1F2;
-    color: #fff;
 }
 
 .sociallink--linkedin:hover {
     background-color: #0077B5;
-    color: #fff;
 }
 
 .sociallink--aboutme:hover {
     background-color: #000;
-    color: #fff;
 }
 .sociallink--github:hover{
     background-color:#6F2D8B;
-    color:#fff;
 }
