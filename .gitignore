@@ -14,3 +14,5 @@ gen/*
 estherandjason/archive/*
 *.psd
 *.ai
+sftp-config.json
+robots.txt
