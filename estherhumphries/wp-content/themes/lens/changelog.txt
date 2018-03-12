@@ -1,0 +1,16 @@
+ChangeLog
+=========
+
+Version 0.94
+
+	i) Minor Correction to pot file.
+	ii) Removed Config.codekit
+
+Version 0.91
+
+	i) Corrected Text Domain in customizer.php
+	ii) Escaped Values on Output
+
+Version 0.9 
+
+	- Initial Release

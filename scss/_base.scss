@@ -1,0 +1,110 @@
+/***** BASE *****/
+
+* {
+    transition: all 0.5s ease-in-out 10ms;
+}
+
+html {
+    font-family: $font-sans;
+    color: $color-darkblue;
+}
+
+body {
+    margin: 0;
+    padding:0 0 2rem 0;
+}
+
+header {
+    width: 100%;
+    background: $color-white;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex: 1 0 50%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+@media screen and (min-width:$width-medium) {
+    nav {
+        flex: 1 0 auto;
+        align-items: baseline;
+    }
+}
+
+main {
+    width: 100%;
+}
+
+
+
+
+/*-- HEADINGS --*/
+
+h1 {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 1.25em;
+}
+
+h1,
+h2,
+h3 {
+    display: block;
+}
+
+
+
+
+
+/*-- TEXT --*/
+
+p,
+li {
+    line-height: 1.75em;
+}
+
+p {
+    font-size: 1em;
+}
+
+li {}
+
+blockquote {}
+
+
+
+
+
+/*-- LINKS --*/
+
+a {
+    transition: color 0 !important;
+}
+
+a,
+a:link {
+    color: $color-darkblue;
+}
+
+a:visited {
+    color: $color-gray;
+}
+
+a:active {
+    color: $color-black;
+}

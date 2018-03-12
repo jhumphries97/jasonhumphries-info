@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /_db_import
+Disallow: /font/
+Disallow: /gen/
+Disallow: /img/master/
+Disallow: /img/blog/
+Disallow: /logs/
+Disallow: /pen/
+Disallow: /style/
+Disallow: /script/
+Disallow: /Templates/

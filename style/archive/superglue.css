@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/* ©2011 Jason Humphries */
+
+/* Elements */
+body{
+	background:#000000 url(../../img/bg_body.jpg) top center repeat;
+	font-family: 'GentiumBookBasicRegular', Verdana, Arial, Helvetica, sans-serif;
+	color:#F2DEA0;
+	margin:0;
+	padding:0;
+}
+p{
+	text-indent:25px;
+}
+img{
+}
+a{
+	color:#FFFBFF;
+}
+a:active{
+	color:#D0B580;
+}
+a:visited{
+	color:#FFFBFF;
+}
+h1 {
+	text-align:center;
+	font:32px;
+	line-height:100%;
+}
+h2 {
+}
+h3 {
+}
+a img{
+	border:0;
+}
+/* Outer Structure */
+#outer_page_frame{
+	background:none;
+	border:0;
+	clear:both;
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0;
+	min-height:800px;
+	padding:0;
+	top:0;
+	width:1000px;
+}
+#nav_menu_frame{
+	float:left;
+	height:inherit;
+	padding-left:10px;
+	min-height:610px;
+	padding-top:190px;
+	text-align:center;
+	width:20px;
+}
+#inner_page_frame{
+	background: #18293B;
+    background: #18293B -moz-linear-gradient(left, #18293B, #101a26);
+    background: #18293B -webkit-gradient(linear,
+                left top, right top, from(#18293B), to(#101a26));
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#18293B', EndColorStr='#101a26', GradientType=1);
+	/*background:#18293B url(../img/bg_page_content.jpg) top left repeat-y;*/
+	float:left;
+	height:100%;
+	min-height:800px;
+	overflow:hidden;
+	width:945px;
+}
+#right_buffer_frame{
+	float:left;	
+	min-height:800px;
+	width:25px;
+	visibility:inherit;
+}
+#head_frame{
+	background:none;
+	clear:both;
+	height:180px;
+	top:0;
+	width:100%;
+	overflow:visible;
+}
+#handheld_head_frame{
+	display:none;
+}
+#page_content{
+	clear:both;
+	min-height:570px;
+	padding-left:3%;
+	padding-right:3%;
+	padding-top:10px;
+	width:94%;
+}
+#footer_frame{
+	background:#101A26;
+	bottom:0;
+	clear:both;
+	height:50px;
+	overflow:hidden;
+	text-align:center;
+	width:100%;
+	vertical-align:middle;
+	margin:0;
+	padding:0;
+}
+
+/* Inner Structure */
+.left_column{
+	border-bottom:3px dotted #101A26;
+	clear:right;
+	float:left;
+	padding-right:1%;
+	padding-bottom:15px;
+	text-align:justify;
+	width:49%;
+}
+.right_column{
+	border-bottom:3px dotted #101A26;
+	clear:right;
+	float:right;
+	padding-left:1%;
+	padding-bottom:15px;
+	text-align:justify;
+	width:48%;
+}
+.page_row{
+	border-bottom:3px dotted #101A26;
+	clear:both;
+	float:none;
+	height:inherit;
+	min-height:250px;
+	min-width:600px;
+	padding-top:20px;
+	text-align:justify;
+}
+.page_row_thin{
+	border-bottom:3px dotted #101A26;
+	clear:both;
+	float:right;
+	height:inherit;
+	min-height:100px;
+	padding-top:20px;
+	text-align:justify;
+}
+
+#page_content img{
+	margin:20px;
+}
+
+/* Navigation */
+#nav_menu a{
+	background: #73582b;
+    background: #73582b -moz-linear-gradient(left, #73582b, #463b25);
+    background: #73582b -webkit-gradient(linear,
+                left top, right top, from(#73582b), to(#463b25));
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#73582b', EndColorStr='#463b25', GradientType=1);
+	/*background:darkgrey url(../img/bg_nav_menu_tab_inactive.jpg) left top repeat-y;*/
+	border-bottom-left-radius:8px;
+	border-top-left-radius:8px;
+	display:block;
+	font-family: 'AftasansItalic', Veranda, Arial, sans;
+	font-weight: bold;
+	font-style:italic;
+	line-height:92%;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	text-transform:uppercase;
+	text-decoration:none;
+	width:20px;
+	word-spacing:21px;
+}
+
+#nav_menu a:hover,#nav_menu a.active:hover{
+	background: #213f61;
+    background: #213f61 -moz-linear-gradient(left, #213f61, #18293B);
+    background: #213f61 -webkit-gradient(linear,
+                left top, right top, from(#213f61), to(#18293B));
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#213f61', EndColorStr='#18293B', GradientType=1);
+	/*background:#18296C url(../img/bg_nav_menu_tab_hover.jpg) right top repeat-y;*/
+}
+#nav_menu a.active{
+	background: #101a26;
+    background: #101a26 -moz-linear-gradient(left, #101a26, #18293B);
+    background: #101a26 -webkit-gradient(linear,
+                left top, right top, from(#101a26), to(#18293B));
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#101a26', EndColorStr='#18293B', GradientType=1);
+	/*background:#18293B url(../img/bg_nav_menu_tab_active.jpg) right top repeat-y;*/
+}
+
+/* Social Links */
+/* Miscellaneous */
+.notes{
+	color:#555555;
+}
+.twitter_window{
+	/*float:right;*/
+	margin:20px;
+}
+#superscript_menu{
+	background: url(../../img/bg_superscript_menu.png) top left repeat-x;
+	font-size: 0px;
+	height:35px;
+	position:fixed;
+	top:0px;
+	visibility:visible;
+	width:100%;
+	z-index:100;
+}
+
+#superscript_menu ul {
+	font-family: 'GentiumBookBasicBold', Georgia, Times, serif;
+	font-variant: small-caps;
+	line-height:21px;
+	list-style:none;
+	position:fixed;
+	right: 20%;	
+}
+#superscript_menu ul li{
+	background: url(../../img/bg_superscript_menu_tab.png) top center no-repeat;
+	display:inline-block;
+	height:35px;
+	overflow:visible;
+	text-align: center;
+	width:138px;
+}
+#superscript_menu ul li a{
+	color: #d0b580;
+	display: block;
+	font-size: 15px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-decoration: none;
+	vertical-align:top;
+	width:138px;
+}
+#superscript_menu li a:hover,#superscript_menu li a.active{
+	background: url(../../img/bg_superscript_menu_tab_hover.png) top center no-repeat;
+	color: #d0b580;
+	height:35px;
+	overflow:visible;
+	text-shadow:0px 0px 3px black;
+	z-index: 102; 
+	width:138px;
+}
+.follow-me{ 
+	position: fixed; 
+	background: none transparent;
+	top: 150px; 
+	right: 0px; 
+	z-index: 102; 
+	width:auto; 
+	text-align:right; 
+	vertical-align:middle; 
+}
+ul.follow-me { 
+	list-style-type:none; 
+}
+.follow-me li{ 
+	display:block; 
+}
+.follow-me li a{
+	padding-left:5px; 
+	padding-top:5px; 
+	padding-bottom:5px; 
+	padding-right:2px; 
+	float:right; 
+	clear:both; 
+	border-top: 1px solid #333333; 
+	border-left: 1px solid #333333; 
+	border-bottom: 1px solid black; 
+	border-right: 0px; 
+	border-top-left-radius:8px; 
+	border-bottom-left-radius:8px; 
+	box-shadow:-5px 2px 5px #111111;
+	background: url(../../img/bg_followme.png) top right no-repeat; 
+}
+ .follow-me li a:hover{ 
+ 	padding-right:15px; 
+	box-shadow:-4px 2px 5px #111111;
+}
+ .follow-me span.hidden{ 
+ 	display:none; 
+}
+ .follow-me img{ 
+ 	vertical-align:middle; 
+}
+ .follow-me img#follow_me{ 
+ 	float:right; 
+	clear:both; 
+	border-top: 0px; 
+	border-left: 1px solid #333333; 
+	border-bottom: 1px solid black; 
+	border-right: 0px; 
+	border-bottom-left-radius:8px; 
+	box-shadow:-5px 2px 5px #111111;
+	background: url(../../img/bg_followme.png) top right no-repeat; 
+}
+
+#footer_frame ul{
+	display:block;
+	list-style:none;
+	text-shadow: black 3px 3px 3px;
+}
+#footer_frame li{
+	display:inline;
+	margin-left:10px;
+	margin-right:10px;
+}
+#footer_frame ul li a{
+	color:#F2DEA0;
+	text-decoration:none;
+	vertical-align:middle;
+}
+#footer_frame ul li a:hover{
+	color:#F2DEA0;
+	text-decoration:underline;	
+}
+/* END */
+
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) */
+
+@font-face {
+    font-family: 'AftasansRegular';
+    src: url('../../font/AftaSansThin-Regular-webfont.eot');
+    src: url('../../font/AftaSansThin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../../font/AftaSansThin-Regular-webfont.woff') format('woff'),
+url('../../font/AftaSansThin-Regular-webfont.ttf') format('truetype'),
+url('../../font/AftaSansThin-Regular-webfont.svg#AftasansRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'AftasansItalic';
+    src: url('../../font/AftaSansThin-Italic-webfont.eot');
+    src: url('../../font/AftaSansThin-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+url('../../font/AftaSansThin-Italic-webfont.woff') format('woff'),
+url('../../font/AftaSansThin-Italic-webfont.ttf') format('truetype'),
+url('../../font/AftaSansThin-Italic-webfont.svg#AftasansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GentiumBookBasicRegular';
+    src: url('../../font/GenBkBasR-webfont.eot');
+    src: url('../../font/GenBkBasR-webfont.eot?#iefix') format('embedded-opentype'),
+url('../../font/GenBkBasR-webfont.woff') format('woff'),
+url('../../font/GenBkBasR-webfont.ttf') format('truetype'),
+url('../../font/GenBkBasR-webfont.svg#GentiumBookBasicRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'GentiumBookBasicBold';
+    src: url('../../font/GenBkBasB-webfont.eot');
+    src: url('../../font/GenBkBasB-webfont.eot?#iefix') format('embedded-opentype'),
+url('../../font/GenBkBasB-webfont.woff') format('woff'),
+url('../../font/GenBkBasB-webfont.ttf') format('truetype'),
+url('../../font/GenBkBasB-webfont.svg#GentiumBookBasicBold') format('svg');
+}
+
+@font-face {
+    font-family: 'SpecialEliteRegular';
+    src: url('../../font/SpecialElite-webfont.eot');
+    src: url('../../font/SpecialElite-webfont.eot?#iefix') format('embedded-opentype'),
+url('../../font/SpecialElite-webfont.woff') format('woff'),
+url('../../font/SpecialElite-webfont.ttf') format('truetype'),
+url('../../font/SpecialElite-webfont.svg#SpecialEliteRegular') format('svg');
+}
+

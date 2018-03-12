@@ -1,0 +1,13 @@
+/***** TRUMPS *****/
+
+.full{
+	width:100%;
+}
+.half{
+	width:50%;
+}
+@media screen and (min-width:$width-medium){
+	.half{
+		width:100%;
+	}
+}

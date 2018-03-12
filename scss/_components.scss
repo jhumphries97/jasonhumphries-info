@@ -1,0 +1,291 @@
+/***** COMPONENTS *****/
+
+.title {
+    color: $color-darkblue;
+    font-family: $font-cursive;
+}
+
+@media screen and (min-width:$width-wide) {
+    .row {
+        max-width: $width-wide;
+        margin: 0 auto;
+    }
+}
+
+.navigation__title,
+.navigation__link {
+    padding: 0 1rem;
+}
+
+.navigation__title {
+    width: calc(100% - 1rem);
+}
+
+.navigation__link {
+    width: auto;
+    padding: 0.5em;
+}
+
+@media screen and (min-width:$width-medium) {
+    .navigation__title,
+    .navigation__link {
+        width: auto;
+        padding: 1em;
+    }
+}
+
+.navigation__link:hover,
+.contactlink:hover {
+    color: #fff;
+    background: $color-darkblue;
+}
+
+.navigation__link--about {
+    order: 2
+}
+
+.navigation__link--resume {
+    order: 3
+}
+
+.navigation__title {
+    order: 1
+}
+
+@media screen and (min-width:$width-medium) {
+    .navigation__link--about {
+        order: 1
+    }
+    .navigation__link--resume {
+        order: 3
+    }
+    .navigation__title {
+        order: 2
+    }
+}
+
+
+
+
+
+
+
+
+/*-- PROFILE --*/
+
+section.profile {
+    background: $color-lightgray;
+}
+
+.profile.row {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width:$width-medium) {
+    .profile.row {
+        margin: 0 auto;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:$width-wide) {
+    .profile.row {
+        width: $width-wide;
+    }
+}
+
+.profile__photobox {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+    margin: -0.35rem auto;
+    -webkit-animation: 1s ease-in-out 10ms 1 profilerotate;
+    animation: 1s ease-in-out 10ms 1 profilerotate;
+}
+
+.profile__photobox:hover {
+    rotate: 7deg;
+}
+
+@media screen and (min-width:$width-medium) {
+    .profile__photobox {
+        margin: -1rem -0.5rem -1rem -1rem;
+        width: calc(100% + 2rem);
+    }
+}
+
+@-webkit-keyframes profilerotate {
+    from {
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+        left: -3em;
+        top: 0;
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes profilerotate {
+    from {
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        position: relative;
+    }
+}
+
+
+
+.photobox__image {
+    display: block;
+    border-radius: $width-small;
+    width: 100%;
+}
+
+
+.profile__skills {
+    width: 100%;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+@media screen and (min-width:$width-medium) {
+    .profile__skills {
+        width: 50%;
+    }
+}
+
+.skillset {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    padding: 1em 1em 1em 1.5em;
+}
+
+.skillset__head {
+    width: 100%;
+}
+
+.skillset__details {
+    width: 0px;
+    heigth: 0px;
+    display: none;
+}
+
+.skillset:hover {
+    background-color: $color-darkblue;
+}
+
+.skillset:hover * {
+    color: #fff;
+}
+
+.skillset:hover .skillset__details {
+    width: 100%;
+    heigth: 2em;
+    display: block;
+}
+
+
+
+
+
+
+/*-- ABOUT --*/
+
+
+/*-- FOOTER --*/
+
+footer {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__contactinfo,
+.footer__social {
+    width: 100%;
+}
+
+@media screen and (min-width:$width-medium) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2rem auto;
+        max-width: $width-wide;
+    }
+    .footer__contactinfo,
+    .footer__social {
+        width: 50%;
+    }
+}
+
+.contactinfo__list,
+.social__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:$width-medium) {
+    .contactinfo__list,
+    .social__list {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.contactinfo__list li,
+.social__list li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+
+.contactname,
+.contactinfo__li .contactlink,
+.social__li .sociallink {
+    display: block;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 0;
+}
+
+.contactlink--phone:hover {
+    border-radius: 0.5em;
+}
+
+.sociallink--twitter:hover {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+.sociallink--linkedin:hover {
+    background-color: #0077B5;
+    color: #fff;
+}
+
+.sociallink--aboutme:hover {
+    background-color: #000;
+    color: #fff;
+}
+.sociallink--github:hover{
+    background-color:#6F2D8B;
+    color:#fff;
+}

@@ -1,0 +1,23 @@
+/***** SETTINGS *****/
+
+/*-- colors --*/
+
+$color-darkblue: #002f5f;
+$color-lightgray: #ededed;
+$color-gray: #868686;
+$color-black: #1d1d1d;
+$color-white: #ffffff;
+
+/*-- fonts --*/
+
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Titillium+Web:300');
+$font-cursive: 'Architects Daughter',
+cursive;
+$font-sans: 'Titillium Web',
+sans-serif;
+
+/*-- break-widths --*/
+
+$width-wide: 1024px;
+$width-medium: 640px;
+$width-small: 320px;

@@ -1,0 +1,235 @@
+/* ----- BASICS ----- */
+* {
+	font: 1em/150% "MyWebFont", Verdana, Geneva, sans-serif;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all 300ms ease 0;
+	-moz-transition: all 300ms ease 0;
+	-ms-transition: all 300ms ease 0;
+	-o-transition: all 300ms ease 0;
+	transition: all 300ms ease 0;
+}
+body {
+	background: url(../img/backgrounds/screen-overlay.png) repeat fixed,
+	url(../img/shadow-corner.png) top left no-repeat fixed, #333;/*#FeFeFc;*/
+	font: 12px/150% "MyWebFont", Verdana, Geneva, sans-serif;
+}
+::-moz-selection {
+	background-color:rgba(0,110,221,0.75) !important;
+	color: #fff !important;
+	text-shadow: #000 1px 1px 2px;
+}
+
+::selection {
+	background-color:rgba(0,110,221,0.75) !important;
+	color: #fff !important;
+	text-shadow: #000 1px 1px 2px;
+}
+a {
+	color: #333;
+	text-decoration:none;
+}
+p {
+	font: 1em/150% Verdana, Geneva, sans-serif;
+	margin-bottom: 1em;
+}
+em {
+	font-style: italic;
+}
+ul {
+	margin: 0 0 0 15px;
+}
+h1 {
+}
+h2 {
+	border-bottom: 1px solid #333;
+	font: bold 1.25em/250% Verdana, Geneva, sans-serif;
+	margin: 0 0 10px 0;
+}
+h3 {
+	color: #004080;
+	font: 900 1.1em/120% Verdana, Geneva, sans-serif;
+}
+h3 a {
+	color: #004080;
+	font: 900 1em/120% Verdana, Geneva, sans-serif;
+	text-decoration: none;
+}
+h4 {
+	border-bottom: 1px dotted #666;
+	color: #333333;
+	font: 600 1.25em/150% Verdana, Geneva, sans-serif;
+}
+h5 {
+	font-weight:bold;
+}
+strong {
+	font-weight: bold;
+}
+/* ----- STRUCTURE ----- */
+#paper {
+	background: url(../img/bg_resume-paper.jpg) repeat;
+	box-shadow: 5px 5px 15px #000;
+	overflow: hidden;
+	padding: 15px 25px 15px 25px;
+	margin: 10px auto 25px auto;
+	max-width: 800px;
+}
+#maincol {
+	clear: left;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	padding: 0 2% 0 0;
+	width: 78%;
+}
+#rightcol {
+	clear: right;
+	float: right;
+	overflow: hidden;
+	width: 20%;
+}
+#header {
+	background: none;
+	border: 0;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 0 25px 0;
+}
+#recommendations {
+}
+#references {
+}
+#skills {
+}
+#education {
+}
+#interests {
+}
+#print {
+	background: url(../img/bg_resume_print.png) center left no-repeat;
+	bottom: 0px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	right: 0px;
+	z-index: 10;
+}
+/* ----- CONTENT ----- */
+.name {
+	font: bold 1.75em/200% Verdana, Geneva, sans-serif;
+}
+.name a {
+	color: #000;
+	font: bold 1em/200% Verdana, Geneva, sans-serif;
+	text-decoration: none;
+}
+.tagline {
+	color: #004080;
+	font: bold 1.5em/100% Verdana, Geneva, sans-serif;
+	margin: 0 0 10px 0;
+}
+.contactinfo {
+}
+.photo {
+	float: right;
+}
+#experience {
+	display: block;
+	list-style: none;
+	margin: 0 0 0 0;
+	overflow: hidden;
+}
+.exp-item {
+	margin: 0 0 20px 0;
+	overflow: hidden;
+}
+.dates {
+	clear: left;
+	color: #004080;
+	float: left;
+	font: Georgia, "Times New Roman", Times, serif;
+	overflow: hidden;
+	padding: 3px 5px 0 0;
+	vertical-align: middle;
+	width: 100px;
+}
+.exp-item .details {
+	clear: right;
+	float: left;
+	overflow: hidden;
+	width: 80%;
+}
+.exp-item .details h3 {
+	margin: 0 0 10px 0;
+}
+#education .details {
+	margin: 0 0 5px 0;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+#education h3 {
+	font-size: 1.25em;
+}
+.recommendations {
+	list-style: none;
+}
+.rec-item {
+	border-bottom: 1px dotted #666;
+	padding: 10px 0 10px 0;
+}
+.social {
+	list-style: none;
+}
+#print a {
+	display: block;
+	height: 64px;
+	margin: 10px;
+	overflow: hidden;
+	width: 64px;
+}
+#print a:hover {
+	background: url(../img/bg_resume_print_highlight.png) 100% 100% no-repeat;
+}
+#print a, #print a:active, #print a:focus {
+	background: url(../img/bg_resume_print_button.png) 100% 100% no-repeat;
+}
+@media screen and (max-width: 860px) {
+	#paper {
+		margin:0;
+	}
+}
+@media screen and (max-width: 725px) {
+	.exp-item .dates {
+		width:100%;
+	}
+	.exp-item .dates br{
+		display:none;
+	}
+}
+@media screen and (max-width: 670px) {
+	#maincol {
+		width:100%;
+	}
+	#rightcol {
+		float:left;
+		width:100%;
+	}
+	.exp-item .details {
+		width:100%
+	}
+}
+@media screen and (max-width: 460px) {
+	.photo {
+		display:none;
+	}
+}
+@media print {
+	#print {
+		display:none;
+	}
+	.dates {
+		width:auto;
+	}
+}

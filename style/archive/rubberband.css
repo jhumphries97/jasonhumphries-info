@@ -1,0 +1,487 @@
+* {
+	font: 1em/150% "MyWebFont", Verdana, Geneva, sans-serif;
+	margin:0;
+	padding:0;
+	-webkit-transition: all 300ms ease 0;
+	-moz-transition: all 300ms ease 0;
+	-ms-transition: all 300ms ease 0;
+	-o-transition: all 300ms ease 0;
+	transition: all 300ms ease 0;
+}
+body {
+	background:url(../img/backgrounds/memphissunset.jpg);
+	background-attachment:fixed;
+	background-color: #222;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+#bgcycler {
+	background:
+	url(../img/backgrounds/screen-overlay.png) repeat fixed,
+	url(../img/shadow-corner.png) top left no-repeat fixed;/*#FeFeFc;*/
+	width:100%;
+	height:100%;
+	position: fixed;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	margin:0;
+	padding:0;
+}
+/* classes to work with cycle plugin for BG images */
+/*
+#bgcycler .bg1 {
+	background:
+	url(../img/backgrounds/screen-overlay.png) repeat fixed,
+	url(../img/backgrounds/pensacolasunset.jpg) 0 0 / 100% fixed no-repeat;
+}
+#bgcycler .bg2 {
+	background:
+	url(../img/backgrounds/screen-overlay.png) repeat fixed,
+	url(../img/backgrounds/navarrebeach.jpg) 0 0 / 100% fixed  no-repeat;
+}
+#bgcycler .bg3 {
+	background:
+	url(../img/backgrounds/screen-overlay.png) repeat fixed,
+	url(../img/backgrounds/mississippisky.jpg) 0 0 / 100% fixed  no-repeat;
+}
+*/
+
+::-moz-selection {
+	background-color:rgba(0,110,221,0.75) !important;
+	color: #fff !important;
+	text-shadow: #000 1px 1px 2px;
+}
+
+::selection {
+	background-color:rgba(0,110,221,0.75) !important;
+	color: #fff !important;
+	text-shadow: #000 1px 1px 2px;
+}
+a {
+	color:#009;
+	font-weight:bold;
+	text-decoration: none;
+}
+a:hover {
+	color:#09f;
+	text-decoration: underline;
+}
+h1 {
+	font: bold 36px/150% Verdana, Geneva, sans-serif;
+	padding-top:.25em;
+}
+h2 {
+	font: bold 1.25em/120% Verdana, Geneva, sans-serif;
+	padding-top:.25em;
+}
+h3 {
+	font: bold 1em/110% Verdana, Geneva, sans-serif;
+	padding:.5em;
+}
+
+/* ----- STRUCTURE ----- */
+#pageshadow {
+	background:transparent url(../img/shadow-top.png) top center repeat-x;
+	margin:0;
+	min-height:10px;
+	padding:0;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:1;
+}
+#navigation {
+	background:transparent url(../img/shadow-bottom-left.png) bottom left no-repeat;
+	clear:both;
+	margin:0 auto;
+	padding:10px;
+	position:fixed;
+	text-shadow:#000 2px 3px 5px;
+	top:0;
+	width:100%;
+	z-index:100;
+}
+#pagewrap {
+	background:transparent;
+	margin: 20px auto;
+	overflow:hidden;
+	padding: 5px;
+	width: 960px;
+}
+#header {
+	background:transparent url(../img/shadow-bottom-left.png) bottom left no-repeat;
+	height: 180px;
+	margin:30px 0 10px 0;
+	padding:10px;
+	text-shadow:#000 2px 3px 5px;
+}
+#header #desk {
+	background:#111 url(../img/bg_header.jpg) bottom center no-repeat;
+	background-size:100%;
+	box-shadow:#111 4px 4px 10px;
+	color:#FeFeFc;
+	height:174px;
+	padding:12px;
+	width:100%;
+}
+#desk h1 {
+	font-size:3.75em;
+	font-weight:800;
+}
+#main {
+	clear:none;
+	float: left;
+	margin-bottom: 10px;
+	padding:10px 5px 10px 10px;
+	width: 65%;
+}
+#sidebar {
+	background: transparent url(../img/bg_gray_transparent.png);
+	border-radius:5px;
+	clear:right;
+	color:#fff;
+	float: right;
+	margin-bottom: 10px;
+	margin-top:10px;
+	padding:5px;
+	text-shadow:#000 2px 3px 5px;
+	width: 30%;
+}
+#footer {
+	background:url(../img/bg_gray_fade.jpg) left center repeat-x #000;
+	box-shadow:#000 4px 4px 10px;
+	clear: both;
+	color:#888;
+	padding:2px;
+}
+
+/* ----- NAVIGATION BAR ----- */
+#navstrip {
+	background: url(../img/bg_nav_menu.png); /*#18293B*/
+	/*border:1px solid #eee;*/
+	color:#FEFEFC;
+	display:block;
+	overflow:hidden;
+	width:100%;
+}
+#navstrip .title {
+	display:none;
+}
+#navstrip .subtitle{
+	display:none;
+}
+#navlist {
+	float:left;
+	list-style:none;
+	margin-left:30%;
+	width:445px;
+}
+#navlist li {
+	display:inline;
+	float:left;
+}
+#navlist li a {
+	color:#FAFBEC;
+	cursor:pointer;
+	display:block;
+	font: lighter 1em/125% "MyWebFont",Verdana, Geneva, sans-serif;
+	overflow:hidden;
+	padding:10px;
+}
+#navlist li a:hover {
+	background:rgb(102,102,102);
+}
+#social {
+	float:right;
+	list-style:none;
+	overflow:hidden;
+	padding-right:10px;
+	width:auto;
+	margin:2px 0;
+}
+#social li {
+	display:inline;
+	float:left;
+	margin:0;
+	padding:0;
+	vertical-align: middle;
+}
+#social li a {
+	background:transparent url(../img/bg_soc_icon.png) 100% 100% no-repeat;
+	cursor:pointer;
+	display:block;
+	font: 1em/125% Verdana, Geneva, sans-serif;
+	height:32px;
+	margin:2px 3px 2px 2px;
+	overflow:hidden;
+	text-align:center;
+	width:32px;
+}
+#social li a:hover {
+	background:transparent url(../img/bg_soc_icon_highlight.png) 100% 100% no-repeat;
+}
+#social li a img {
+	width:32px;
+	height:32px;
+	margin:0;
+	padding:0;
+}
+
+/* ----- MAIN CONTENT ----- */
+#header a, #header a:hover {
+	color:#C6E2FF;
+}
+#content {
+	background:#eeeeee url(../img/paper-texture.jpg) repeat;
+	background-size: 100% auto;
+	border: solid 1px #ccc;	
+	box-shadow:#000 5px 5px 5px;
+	display:block;
+	overflow:hidden;
+	padding:1em;
+}
+#content p {
+	margin-bottom:1em;
+}
+#content li {
+	margin-left:1em;
+}
+/* ----- SIDEBAR CONTENT ----- */
+#sidebar img.profile{
+	border-radius:15px;
+	width:95%;
+	height:auto;
+}
+#sidebar .info {
+	color:white;
+	font-size:1em;
+}
+#sidebar .info a {
+	color: #fff;
+	font-weight:normal;
+	text-decoration:none;
+}
+#sidebar .info a:hover {
+	text-decoration:underline;
+}
+#sidebar .info ul {
+		margin:5px 0 20px 5px;
+}
+#sidebar .info li {
+	line-height:32px;
+	list-style:none;
+	min-height:34px;
+	overflow:hidden;
+	padding:2px 0 2px 34px;
+	vertical-align:middle;
+}
+li.list-title {
+	font-weight:bold;
+	padding:0 !important;
+	text-decoration:underline;
+}
+li.wp {
+	background:url(../img/followme_wp.png) left center no-repeat;
+}
+li.resume {
+	background:url(../img/followme_resume.png) left center no-repeat;
+}
+li.me {
+	background:url(../img/followme_me.png) left center no-repeat;
+}
+.twitter_window{
+	max-width:250px !important;
+	overflow:hidden;
+	width:100% !important;
+}
+
+/* ----- MEDIA QUERIES ----- */
+/* for 4000px or less */
+@media screen and (max-width: 4000px) {
+	#navlist {
+		margin-left:43%;
+	}
+	#social {
+		float:left;
+	}
+}
+/* for 3200px or less */
+@media screen and (max-width: 3200px) {
+	#navlist {
+		margin-left:30%;
+	}
+	#social {
+		float:right;
+		margin-right:27%;
+	}
+}
+/* for 2200px or less */
+@media screen and (max-width: 2200px) {
+	#navlist {
+		margin-left:22%;
+	}
+	#social {
+		margin-right:20%;
+	}
+}
+/* for 1800px or less */
+@media screen and (max-width: 1800px) {
+	#navlist {
+		margin-left:15%;
+	}
+	#social {
+		margin-right:15%;
+	}
+}
+/* for 1400px or less */
+@media screen and (max-width: 1400px) {
+	#navlist {
+		margin-left:0;
+	}
+	#social {
+		margin-right:10px;
+	}
+}
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	#header #desk{
+		background-size:980px;
+	}
+	#navlist {
+		margin-left:0;
+	}
+	#pagewrap {
+		width: 95%;
+	}
+	#main {
+		width: 66%;
+	}
+	#sidebar {
+		width: 29%;
+	}
+}
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+	#navigation{
+		padding-top:6px;
+		padding-left:5px;
+		padding-right:5px;
+	}
+	#social{
+		display:none;
+	}
+	#pagewrap {
+		padding: 5px;
+	}
+	#header {
+		margin-bottom:5px;
+	}
+	#desk h1 {
+		font-size:2.5em;
+	}
+	#main {
+		float: none;
+		margin-bottom:5px;
+		width: auto;
+	}
+	#sidebar {
+		float: none;
+		margin-bottom:5px;
+		margin-top:0;
+		overflow:hidden;
+		width: auto;
+	}
+	#sidebar p{
+		text-align:left;
+	}
+	#sidebar img.profile{
+		border-radius:5px;
+		float:left;
+		margin:10px;
+		width:30%;
+	}
+	#sidebar .info {
+		float:none;
+		margin:10px auto;
+		max-width:300px;
+	}
+	.twitter_window {
+		display:none
+	}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	#navigation{
+		position: relative;
+	}
+	#navstrip{
+		background:#333 url(../img/bg_header.jpg) bottom no-repeat;
+		text-shadow: #000 2px 3px 5px;
+		background-size:980px;
+		background-position: -460px -50px;
+	}
+	#navstrip .title {
+		display:block;
+		clear: both;
+		float:left;
+		font:bold 2em/100% Verdana, Geneva, sans-serif;
+		padding:5px;
+		width:auto;
+	}
+	#navlist{
+		background:transparent url(../img/bg_gray_transparent.png);
+		float:right;		
+		width:auto;
+	}
+	#navlist li{
+		clear:both;
+		display:block;
+		width:100%;
+	}
+	#social{
+		display:block;
+		float:left;
+		margin-left:4px;
+	}
+	#navstrip .subtitle{
+		clear:left;
+		display:block;
+		float:left;
+		margin:2px 2px 8px 4px;
+		width:50%;
+	}
+	#pagewrap {
+		padding: 0px 5px 5px 5px;
+		margin:0px;
+	}
+	#main {
+		padding-top:0px;
+	}
+	#header {
+		display: none;
+	}
+	#desk {
+		height:auto;
+	}
+	#sidebar {
+		display: none;
+	}
+}
+/* border & guideline (you can ignore these) */
+#sidebar, #footer {
+	border: solid 1px #888;
+}
+/*****************************************
+FONT
+*****************************************/
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('../font/Museo300-Regular-webfont.eot');
+	src: url('../font/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),  
+		 url('../font/Museo300-Regular-webfont.woff') format('woff'),  
+		 url('../font/Museo300-Regular-webfont.ttf') format('truetype'),
+		 url('../font/Museo300-Regular-webfont.svg#webfont') format('svg');
+}

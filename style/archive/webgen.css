@@ -1,0 +1,212 @@
+body {
+	background: #FFFFCC url(../img/webgen-tree-background.jpg) top center no-repeat fixed;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #555555;
+}
+table {
+	border:0;
+	margin:0;
+	padding:0;
+}
+td {
+	border:0;
+	margin:0;
+	padding:0;
+}
+a {
+	color: #330000;
+	padding: 2px;
+	margin:1px;
+}
+a:hover {
+	color: #DEDECA;
+	background: #330000 url(../img/navbar_1x24.jpg) top center repeat-x ;
+	border:outset 1px;
+	border-radius:6px;
+	margin:0;
+}
+a:active {
+	color: #330000;
+	background: #DEDECA url(../img/navbar_1_1x24.jpg) top center repeat-x ;
+	border:inset 1px;
+	border-radius:6px;
+}
+td, th {
+	font-size: 14px;
+	line-height: 24px;
+	color: #330000;
+	
+}
+
+hr {
+	color: #773300;
+}
+
+
+form {
+	background-color: #CCCC99;
+}
+pre {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.alphamenu {
+	background: url(../img/navbar_1x24.jpg) repeat top left;
+	line-height:24px;
+	text-align:center;
+	border-radius:5px;
+	color:#400000;
+	width:90%;
+	overflow:visible;
+	padding:0px;
+}
+div.alphamenu a{
+	text-decoration:none;
+	padding-left:5px;
+	padding-right:5px;
+	color:white;
+	line-height:24px;
+	overflow:visible;
+	margin:1px;
+}
+div.alphamenu a:hover {
+	background: url(../img/navbar_i_1x24.jpg) repeat top left;
+	color:#330000;
+	line-height:24px;
+	overflow:visible;
+	margin:0;
+	border: 1px inset;
+	border-radius:5px;
+}
+font.title{
+	color:#773300;
+	font-weight:bolder;
+	background:none;
+	text-decoration:none;
+	font-size:36px;
+	text-shadow:#555555 2px 2px 3px;
+}
+font.heading {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#330000;
+	font-size:18px;
+	font-weight:bolder;
+	text-transform: capitalize;
+	text-shadow: #555555 2px 2px 2px;
+	line-height:200%;
+}
+font.subhead {
+	color: #000099;
+	font-weight:bold;
+	text-transform: uppercase;
+	text-shadow: #eeeeee 1px 1px 2px;
+}
+.title {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	line-height: 30px;
+  	background-color: #990000;
+	color: #FFFF66;
+}
+
+.subtitle {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+  color: #660000; font-style: oblique;
+}
+
+.header {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	background-color: #990000;
+  color: #FFFF66;
+}
+
+.nav {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: bold;
+	background: url(../img/navbar_1x24.jpg) top center repeat-x;
+}
+
+.navLink {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #DEDECA;
+}
+.sidebar {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 3px;
+	background-color: #FFFF99;
+}
+
+.sidebarHeader {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #FFFF99;
+	background-color: #999933;
+ font-weight: bold;
+}
+
+.sidebarFooter {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	line-height: 18px;
+	background-color: #FFFF99;
+ color: #990000;
+}
+
+.footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 22px;
+	color: #333333;
+	background-color: #FFFF99;
+}
+
+.legal {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14pt;
+	color: #333333;
+}
+
+.box1 {
+	border-width: 2px;
+	border-color: #CCCCCC #333333 #333333 #CCCCCC;
+  border-style: dotted;
+	}
+
+.promo {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #000033;
+}
+
+.titlebar {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #336699;
+}
+
+.dingbat {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: #CCCC99;
+ color: #660000; font-weight: bolder; font-size: medium;
+}
+
+input.big {
+	width: 100px;
+}
+
+input.small {
+	width: 50px;
+}
+

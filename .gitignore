@@ -1,14 +1,26 @@
 *.log
 wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
+estherhumphries/wp-content/advanced-cache.php
+estherhumphries/wp-content/backup-db/
+estherhumphries/wp-content/backups/
+estherhumphries/wp-content/blogs.dir/
+estherhumphries/wp-content/cache/
+estherhumphries/wp-content/upgrade/
+estherhumphries/wp-content/uploads/
+estherhumphries/wp-content/wp-cache-config.php
+estherhumphries/wp-content/plugins/hello.php
+
+wp-config.php
+humphriesfamilyresearch/wp-content/advanced-cache.php
+humphriesfamilyresearch/wp-content/backup-db/
+humphriesfamilyresearch/wp-content/backups/
+humphriesfamilyresearch/wp-content/blogs.dir/
+humphriesfamilyresearch/wp-content/cache/
+humphriesfamilyresearch/wp-content/upgrade/
+humphriesfamilyresearch/wp-content/uploads/
+humphriesfamilyresearch/wp-content/wp-cache-config.php
+humphriesfamilyresearch/wp-content/plugins/hello.php
+
 
 /.htaccess
 /license.txt
@@ -16,3 +28,8 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+gen/*
+*.zip
+estherandjason/archive/*
+*.psd
+*.ai

@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+#gallerycontainer{
+	width:408px;
+	border-radius:10px;
+	box-shadow:5px 5px 10px #010101;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+#slider { 
+	width: 400px; /* important to be same as image width */ 
+	height: 400px; /* important to be same as image height */
+	position: relative; /* important */
+	overflow: hidden; /* important */
+	border:4px solid black;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	background:#888888 url(../../img/bg_slidercontent.jpg) repeat-x bottom;
+}
+#s3slidercaption { 
+	width: 400px;
+	border:4px solid black;
+	position:relative;
+	background:black;
+	color:white;
+	font-family: GentiumBookBasicBold, Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size:1.5em;
+	text-align:center;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+
+}
+#s3slidercaption span{
+	font-family: GentiumBookBasic, Georgia, "Times New Roman", Times, serif;
+	color:gray; 
+	font-size:10px; 
+}
+#sliderContent {
+	width: 400px; /* important to be same as image width or wider */
+	height: 400px;
+	position: absolute; /* important */
+	top: 0; /* important */
+	margin-left: 0; /* important */
+	margin-bottom:10px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	z-index:100;
+	visibility:visible;
+}
+.sliderImage {
+   float: left; /* important */
+   position: relative; /* important */
+   display: none; /* important */
+}
+.sliderImage span {
+   position: absolute; /* important */
+   left: 0;
+   font: 10px/15px Verdana, Arial, Helvetica, sans-serif;
+   padding: 10px 13px;
+   width: 374px;
+   background-color: #000;
+   filter: alpha(opacity=70); /* here you can set the opacity of box with text */
+   -moz-opacity: 0.7; /* here you can set the opacity of box with text */
+   -khtml-opacity: 0.7; /* here you can set the opacity of box with text */
+   opacity: 0.7; /* here you can set the opacity of box with text */
+   color: #fff;
+   display: none; /* important */
+   top: 0;
+   /*
+       if you put
+       top: 0; -> the box with text will be shown at the top of the image 
+       if you put
+       bottom: 0; -> the box with text will be shown at the bottom of the image
+   */
+}
+.sliderImage span a{
+	text-decoration:none;
+	font-weight:bold;
+}
+.sliderImage span a:hover{
+	color:#617b94;
+}
+.clear {
+   clear: both;
+}
+.top {
+	top: 0;
+	left: 0;
+}
+.bottom {
+	bottom: 0;
+    left: 0;
+}
+ul { list-style-type: none;}
+.thumbnails {
+	display:block;
+	margin-top:10px;
+	overflow:hidden;
+	text-align:left;
+	with:400px;
+}
+.thumbnails p a img {
+	border: 6px solid black;
+	background: #888888;
+	border-radius:6px;
+	margin-bottom:5px;
+	width:65px;
+	width:65px;
+	box-shadow:2px 2px 2px #111111;
+}
+.thumbnails p a img:hover {
+	border: 6px solid #09F;
+}
