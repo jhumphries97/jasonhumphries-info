@@ -6,6 +6,9 @@
 }
 
 
+
+
+
 /* @media screen and (min-width:$width-wide){*/
 
 
@@ -74,6 +77,9 @@
         order: 2
     }
 }
+
+
+
 
 
 
@@ -211,6 +217,9 @@
 
 
 
+
+
+
 /*-- ABOUT --*/
 
 
@@ -223,8 +232,9 @@
     overflow-x: scroll;
     flex-wrap: nowrap;
 }
-.portfolio__title{
-    padding:1rem;
+
+.portfolio__title {
+    padding: 1rem;
 }
 
 .portfolio__sample {
@@ -232,24 +242,27 @@
 }
 
 @media screen and (min-width:$width-medium) {
-    .portfolio{
+    .portfolio {
         -webkit-perspective: calc(var(--width-small) * 2);
-                perspective: calc(var(--width-small) * 2);
+        perspective: calc(var(--width-small) * 2);
     }
     .portfolio__sample {
         flex: 0 1 auto;
 
         -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-        -webkit-transform: rotateX(-80deg);
-                transform: rotateX(-80deg);
+        transform-style: preserve-3d;
+        -webkit-transform: rotateX(-85deg);
+        transform: rotateX(-85deg);
     }
-    .portfolio:hover .portfolio__sample{
-                /* background-color: var(--color-lightgray);*/
+    .portfolio:hover .portfolio__sample {
+        /* background-color: var(--color-lightgray);*/
         -webkit-transform: rotateX(360deg);
-                transform: rotateX(360deg);
+        transform: rotateX(360deg);
     }
 }
+
+
+
 
 
 
@@ -341,4 +354,27 @@ footer {
 
 .sociallink--goodreads:hover {
     background-color: #382110;
+}
+
+.contact__arrow {
+    display: block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    left: -50vw;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+#contact:target .contact__arrow {
+    left: -1rem;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.downarrow__path {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--color-darkblue);
+    
 }

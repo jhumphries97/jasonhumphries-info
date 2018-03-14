@@ -17,7 +17,7 @@ $width-small: 20em;
     --color-black: #1d1d1d;
     --color-white: #ffffff;
     /*-- break-widths --*/
-    --width-wide: $width-wide;
-    --width-medium: $width-medium;
-    --width-small: $width-small;
+    --width-wide: #{$width-wide};
+    --width-medium: #{$width-medium};
+    --width-small: #{$width-small};
 }
