@@ -1,16 +1,30 @@
 /***** COMPONENTS *****/
 
 .title {
-    color: $color-darkblue;
-    font-family: $font-cursive;
+    color: var(--color-darkblue);
+    font-family: var(--font-cursive);
 }
 
-@media screen and (min-width:$width-wide) {
-    .row {
-        max-width: $width-wide;
-        margin: 0 auto;
-    }
-}
+
+
+
+
+/* @media screen and (min-width:$width-wide){*/
+
+
+/*     .row {*/
+
+
+/*         max-width: var(--width-wide);*/
+
+
+/*         margin: 0 auto;*/
+
+
+/*     }*/
+
+
+/* }*/
 
 .navigation__title,
 .navigation__link {
@@ -37,7 +51,7 @@
 .navigation__link:hover,
 .contactlink:hover {
     color: #fff;
-    background: $color-darkblue;
+    background: var(--color-darkblue);
 }
 
 .navigation__link--about {
@@ -70,14 +84,13 @@
 
 
 
-
 /*-- PROFILE --*/
 
-section.profile {
-    background: $color-lightgray;
+.profile {
+    background: var(--color-lightgray);
 }
 
-.profile.row {
+.profile__box {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
@@ -85,15 +98,15 @@ section.profile {
 }
 
 @media screen and (min-width:$width-medium) {
-    .profile.row {
+    .profile__box {
         margin: 0 auto;
         flex-direction: row;
     }
 }
 
 @media screen and (min-width:$width-wide) {
-    .profile.row {
-        width: $width-wide;
+    .profile__box {
+        width: var(--width-wide);
     }
 }
 
@@ -112,7 +125,7 @@ section.profile {
     rotate: 7deg;
 }
 
-@media screen and (min-width:$width-medium) {
+@media screen and (min-width: $width-medium) {
     .profile__photobox {
         margin: -1rem -0.5rem -1rem -1rem;
         width: calc(100% + 2rem);
@@ -148,7 +161,7 @@ section.profile {
 
 .photobox__image {
     display: block;
-    border-radius: $width-small;
+    border-radius: 100%;
     width: 100%;
 }
 
@@ -184,7 +197,7 @@ section.profile {
 }
 
 .skillset:hover {
-    background-color: $color-darkblue;
+    background-color: var(--color-darkblue);
 }
 
 .skillset:hover * {
@@ -202,7 +215,55 @@ section.profile {
 
 
 
+
+
+
+
+
 /*-- ABOUT --*/
+
+
+/*-- portfolio --*/
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+.portfolio__title {
+    padding: 1rem;
+}
+
+.portfolio__sample {
+    flex: 0 0 50%;
+}
+
+@media screen and (min-width:$width-medium) {
+    .portfolio {
+        -webkit-perspective: calc(var(--width-small) * 2);
+        perspective: calc(var(--width-small) * 2);
+    }
+    .portfolio__sample {
+        flex: 0 1 auto;
+
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform: rotateX(-85deg);
+        transform: rotateX(-85deg);
+    }
+    .portfolio:hover .portfolio__sample {
+        /* background-color: var(--color-lightgray);*/
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
+
+
+
+
 
 
 /*-- FOOTER --*/
@@ -224,7 +285,7 @@ footer {
         flex-direction: row;
         justify-content: space-around;
         margin: 2rem auto;
-        max-width: $width-wide;
+        max-width: var(--width-wide);
     }
     .footer__contactinfo,
     .footer__social {
@@ -267,25 +328,53 @@ footer {
     margin: 0;
 }
 
+.sociallink:hover {
+    color: #fff;
+}
+
 .contactlink--phone:hover {
     border-radius: 0.5em;
 }
 
 .sociallink--twitter:hover {
     background-color: #1DA1F2;
-    color: #fff;
 }
 
 .sociallink--linkedin:hover {
     background-color: #0077B5;
-    color: #fff;
 }
 
 .sociallink--aboutme:hover {
     background-color: #000;
-    color: #fff;
 }
-.sociallink--github:hover{
-    background-color:#6F2D8B;
-    color:#fff;
+
+.sociallink--github:hover {
+    background-color: #6F2D8B;
+}
+
+.sociallink--goodreads:hover {
+    background-color: #382110;
+}
+
+.contact__arrow {
+    display: block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    left: -50vw;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+#contact:target .contact__arrow {
+    left: -1rem;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.downarrow__path {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--color-darkblue);
+    
 }
