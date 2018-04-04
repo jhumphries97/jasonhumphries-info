@@ -1,7 +1,7 @@
 *.log
-estherhumphries/*
-humphriesfamilyresearch/*
 
+estherhumphries/
+humphriesfamilyresearch/
 
 /.htaccess
 /license.txt
@@ -9,9 +9,9 @@ humphriesfamilyresearch/*
 /sitemap.xml
 /sitemap.xml.gz
 
-gen/*
+gen/
 *.zip
-estherandjason/archive/*
+estherandjason/archive/
 *.psd
 *.ai
 sftp-config.json
