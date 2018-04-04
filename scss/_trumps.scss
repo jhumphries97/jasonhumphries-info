@@ -1,13 +1,15 @@
 /***** TRUMPS *****/
 
-.full{
-	width:100%;
+.full {
+    width: 100%;
 }
-.half{
-	width:50%;
+
+.half {
+    width: 50%;
 }
-@media screen and (min-width:$width-medium){
-	.half{
-		width:100%;
-	}
+
+@media screen and (min-width:$width-medium) {
+    .half {
+        width: 100%;
+    }
 }

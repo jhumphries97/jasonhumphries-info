@@ -1,2 +1,71 @@
 /***** GENERIC *****/
 
+
+/*-- HEADINGS --*/
+
+h1 {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 1.25em;
+}
+
+h1,
+h2,
+h3 {
+    display: block;
+}
+
+
+
+
+
+
+
+
+/*-- TEXT --*/
+
+p,
+li {
+    line-height: 1.75em;
+}
+
+p {
+    font-size: 1em;
+}
+
+li {}
+
+blockquote {}
+
+
+
+
+/*-- LINKS --*/
+
+a {
+    transition: color 0 !important;
+}
+
+a,
+a:link {
+    color: var(--color-darkblue);
+}
+
+a:visited {
+    color: var(--color-gray);
+}
+
+a:active {
+    color: var(--color-black);
+}
+

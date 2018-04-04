@@ -6,26 +6,6 @@
 }
 
 
-
-
-
-/* @media screen and (min-width:$width-wide){*/
-
-
-/*     .row {*/
-
-
-/*         max-width: var(--width-wide);*/
-
-
-/*         margin: 0 auto;*/
-
-
-/*     }*/
-
-
-/* }*/
-
 .navigation__title,
 .navigation__link {
     padding: 0 1rem;
@@ -48,11 +28,7 @@
     }
 }
 
-.navigation__link:hover,
-.contactlink:hover {
-    color: #fff;
-    background: var(--color-darkblue);
-}
+
 
 .navigation__link--about {
     order: 2
@@ -77,7 +53,6 @@
         order: 2
     }
 }
-
 
 
 
@@ -158,11 +133,14 @@
 }
 
 
-
 .photobox__image {
+    z-index: 3;
+    position:relative;
     display: block;
     border-radius: 100%;
-    width: 100%;
+    width: calc(100% - 1.5rem);
+    border: 0.75rem solid #fff;
+    box-shadow: #000 (0, 0, 0, 1em)
 }
 
 
@@ -174,6 +152,10 @@
 }
 
 @media screen and (min-width:$width-medium) {
+    .photobox__image {
+        width: calc(100% - 2.2rem);
+        border: 1.1rem solid #fff;
+    }
     .profile__skills {
         width: 50%;
     }
@@ -196,25 +178,13 @@
     display: none;
 }
 
-.skillset:hover {
-    background-color: var(--color-darkblue);
-}
 
-.skillset:hover * {
-    color: #fff;
-}
 
 .skillset:hover .skillset__details {
     width: 100%;
-    heigth: 2em;
+    height: 2em;
     display: block;
 }
-
-
-
-
-
-
 
 
 
@@ -246,6 +216,7 @@
         -webkit-perspective: calc(var(--width-small) * 2);
         perspective: calc(var(--width-small) * 2);
     }
+
     .portfolio__sample {
         flex: 0 1 auto;
 
@@ -254,13 +225,13 @@
         -webkit-transform: rotateX(-85deg);
         transform: rotateX(-85deg);
     }
+
     .portfolio:hover .portfolio__sample {
         /* background-color: var(--color-lightgray);*/
         -webkit-transform: rotateX(360deg);
         transform: rotateX(360deg);
     }
 }
-
 
 
 
@@ -287,6 +258,7 @@ footer {
         margin: 2rem auto;
         max-width: var(--width-wide);
     }
+
     .footer__contactinfo,
     .footer__social {
         width: 50%;
@@ -332,27 +304,27 @@ footer {
     color: #fff;
 }
 
-.contactlink--phone:hover {
-    border-radius: 0.5em;
-}
+// .contactlink--phone:hover {
+//     border-radius: 0.5em;
+// }
 
-.sociallink--twitter:hover {
+.sociallink--twitter::before {
     background-color: #1DA1F2;
 }
 
-.sociallink--linkedin:hover {
+.sociallink--linkedin::before {
     background-color: #0077B5;
 }
 
-.sociallink--aboutme:hover {
+.sociallink--aboutme::before {
     background-color: #000;
 }
 
-.sociallink--github:hover {
+.sociallink--github::before {
     background-color: #6F2D8B;
 }
 
-.sociallink--goodreads:hover {
+.sociallink--goodreads::before {
     background-color: #382110;
 }
 
@@ -376,5 +348,4 @@ footer {
     width: 1rem;
     height: 1rem;
     fill: var(--color-darkblue);
-    
 }
