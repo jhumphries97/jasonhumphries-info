@@ -2,6 +2,9 @@ estherhumphries/
 humphriesfamilyresearch/
 gen/
 archive/
+pad/
+logs/
+_archive/
 
 /.htaccess
 /license.txt

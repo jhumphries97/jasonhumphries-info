@@ -1,50 +1,32 @@
 /***** BASE *****/
 
-/* {
-    transition: all 0.5s ease-in-out 10ms;
-}*/
 
-html {
-    font-family: var(--font-sans);
+/* -- Page SECTIONS --*/
+
+.title {
     color: var(--color-darkblue);
+    font-family: var(--font-cursive);
 }
 
-body {
-    margin: 0;
-    padding: 0 0 2rem 0;
+.profile {
+    background: var(--color-lightgray);
+    box-shadow: 0 0 3rem rgba(30,30,30,0.5);
 }
 
-header {
-    width: 100%;
-    background: var(--color-white);
-}
+.about {}
 
-nav {
+.portfolio {
     width: 100%;
     display: flex;
-    flex: 1 0 50%;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
 }
 
-@media screen and (min-width: $width-medium) {
-    nav {
-        flex: 1 0 auto;
-        align-items: baseline;
+
+@media screen and (min-width:$width-medium) {
+    .portfolio {
+        -webkit-perspective: calc(var(--width-small) * 2);
+        perspective: calc(var(--width-small) * 2);
     }
 }
-
-main {
-    width: 100%;
-}
-
-section {
-    width: 100%;
-}
-
-
-
-
-

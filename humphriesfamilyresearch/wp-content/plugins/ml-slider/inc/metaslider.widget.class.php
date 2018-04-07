@@ -1,12 +1,11 @@
 <?php
-/**
- * Adds Meta Slider widget.
- */
-
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // disable direct access
 }
 
+/**
+ * Adds MetaSlider widget.
+ */
 class MetaSlider_Widget extends WP_Widget {
 
 	/**
@@ -15,8 +14,8 @@ class MetaSlider_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'metaslider_widget', // Base ID
-			'Meta Slider', // Name
-			array( 'description' => __( 'Meta Slider', 'metaslider' ) ) // Args
+			'MetaSlider', // Name
+			array( 'description' => __( 'MetaSlider', 'ml-slider' ) ) // Args
 		);
 	}
 
@@ -25,8 +24,8 @@ class MetaSlider_Widget extends WP_Widget {
 	 *
 	 * @see WP_Widget::widget()
 	 *
-	 * @param array   $args     Widget arguments.
-	 * @param array   $instance Saved values from database.
+	 * @param array $args     Widget arguments.
+	 * @param array $instance Saved values from database.
 	 */
 	public function widget( $args, $instance ) {
 		extract( $args );
@@ -50,8 +49,8 @@ class MetaSlider_Widget extends WP_Widget {
 	 *
 	 * @see WP_Widget::update()
 	 *
-	 * @param array   $new_instance Values just sent to be saved.
-	 * @param array   $old_instance Previously saved values from database.
+	 * @param array $new_instance Values just sent to be saved.
+	 * @param array $old_instance Previously saved values from database.
 	 *
 	 * @return array Updated safe values to be saved.
 	 */
@@ -68,7 +67,7 @@ class MetaSlider_Widget extends WP_Widget {
 	 *
 	 * @see WP_Widget::form()
 	 *
-	 * @param array   $instance Previously saved values from database.
+	 * @param array $instance Previously saved values from database.
 	 */
 	public function form( $instance ) {
 		$selected_slider = 0;
@@ -106,10 +105,10 @@ class MetaSlider_Widget extends WP_Widget {
 		<p>
 			<?php if ( $sliders ) { ?>
 				<p>
-					<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'metaslider' ); ?></label>
+					<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'ml-slider' ); ?></label>
 					<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 				</p>
-				<label for="<?php echo $this->get_field_id( 'slider_id' ); ?>"><?php _e( 'Select Slider:', 'metaslider' ); ?></label>
+				<label for="<?php echo $this->get_field_id( 'slider_id' ); ?>"><?php _e( 'Select Slider:', 'ml-slider' ); ?></label>
 				<select id="<?php echo $this->get_field_id( 'slider_id' ); ?>" name="<?php echo $this->get_field_name( 'slider_id' ); ?>">
 					<?php
 			foreach ( $sliders as $slider ) {
@@ -119,7 +118,7 @@ class MetaSlider_Widget extends WP_Widget {
 ?>
 				</select>
 			<?php } else {
-			_e( 'No slideshows found', 'metaslider' );
+			_e( 'No slideshows found', 'ml-slider' );
 		} ?>
 		</p>
 		<?php
