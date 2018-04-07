@@ -10,7 +10,7 @@
 
 .profile {
     background: var(--color-lightgray);
-    box-shadow: 0 0 3rem rgba(30,30,30,0.5);
+    box-shadow: 0 0 1.5rem rgba(30,30,30,0.25);
 }
 
 .about {}
@@ -25,6 +25,9 @@
 
 
 @media screen and (min-width:$width-medium) {
+    .profile{
+    box-shadow: 0 0 3rem rgba(30,30,30,0.5);
+    }
     .portfolio {
         -webkit-perspective: calc(var(--width-small) * 2);
         perspective: calc(var(--width-small) * 2);
