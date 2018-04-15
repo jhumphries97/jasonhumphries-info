@@ -5,6 +5,7 @@ archive/
 pad/
 logs/
 _archive/
+asp/
 
 /.htaccess
 /license.txt
