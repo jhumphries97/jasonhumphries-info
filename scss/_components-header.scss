@@ -1,0 +1,53 @@
+/***** COMPONENTS-HEADER *****/
+
+.navigation__title,
+.navigation__link {
+    padding: 0 1rem;
+}
+
+.navigation__title {
+    width: calc(100% - 1rem);
+}
+
+.navigation__link {
+    width: auto;
+    padding: 0.5em;
+}
+
+@media screen and (min-width:$width-medium) {
+    .navigation__title,
+    .navigation__link {
+        width: auto;
+        padding: 1em;
+    }
+}
+
+.navigation__title {
+    order: 0;
+}
+
+.navigation__link--contact {
+    order: 1;
+}
+
+.navigation__link--resume {
+    order: 2;
+}
+
+.navigation__link--portfolio {
+    order: 3;
+}
+
+
+
+/* @media screen and (min-width:$width-medium) {*/
+/*     .navigation__link--about {*/
+/*         order: 1*/
+/*     }*/
+/*     .navigation__link--resume {*/
+/*         order: 3*/
+/*     }*/
+/*     .navigation__title {*/
+/*         order: 2*/
+/*     }*/
+/* }*/

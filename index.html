@@ -23,8 +23,10 @@
     <header class="header">
         <nav id="navigation">
             <h1 class="navigation__title">Jason Humphries</h1>
-            <a title="contact info" class="navigation__link navigation__link--about" href="#contact">Contact</a>
+            <a title="contact info" class="navigation__link navigation__link--contact" href="#contact">Contact</a>
             <a title="View my resume" class="navigation__link navigation__link--resume" href="resume.html">Resum&eacute;</a>
+            <a title="Download a Low Resolution Portfolio" class="navigation__link navigation__link--portfolio" href="#Portfolio" target="_blank">Portfolio</a>
+            <!-- <a title="portfolio high res" class="navigation__link navigation__link--portfolio-hr" href="JasonHumphries_DesignPortfolio_lowres.pdf" target="_blank">Portfolio (high res)</a> -->
         </nav>
     </header>
     <main class="main">
@@ -42,7 +44,7 @@
                     </div>
                     <div class="skillset skillset--3">
                         <h2 class="skillset__head">Project Manager</h2>
-                        <div class="skillset__details">Planning &amp; Execution &bull; Define Requirements &amp; Specifications &bull; Create Guidelines  &bull; Design Efficient Processes </div>
+                        <div class="skillset__details">Planning &amp; Execution &bull; Define Requirements &amp; Specifications &bull; Create Guidelines &bull; Design Efficient Processes </div>
                     </div>
                     <div class="skillset skillset--4">
                         <h2 class="skillset__head">Solution Provider</h2>
@@ -53,14 +55,43 @@
         </section>
         <section id="about" class="about row">
             <!--<div class="strengths"></div>
-            <div class="reading"></div>
-             <div class="portfolio">
-                <h1 class="portfolio__title">Sample graphic designs</h1>
-                <img class="portfolio__sample" alt="2001 Beach Side Lawn Services logo" src="portfolio/bsls.png">
-                <img class="portfolio__sample" alt="2009 Central Academy annual cover" src="portfolio/CAyearbook09.png">
-                <img class="portfolio__sample" alt="2003 StereoGIS software logo" src="portfolio/StereoGIS.png">
-                <img class="portfolio__sample" alt="1999 Power 88 Radio Station logo" src="portfolio/Power88.png">
-            </div> -->
+            <div class="reading"></div>-->
+            <h2 id="Portfolio" class="portfolio__title">Portfolio</h2>
+            <div class="portfolio">
+                <ul class="portfolio__nav">
+                    <li class="portfolio__navLink"><a href="#Portfolio-logos">Logos</a></li>
+                    <li class="portfolio__navLink"><a href="#Portfolio-websites">Websites</a></li>
+                    <li class="portfolio__navLink"><a href="#Portfolio-print">Print</a></li>
+                </ul>
+                <!-- <div id="Portfolio-none" class="portfolio__category">
+                    &nbsp;
+                </div> -->
+                <div id="Portfolio-logos" class="portfolio__category">
+                    <h2 class="portfolio__categoryTitle">Logos</h2>
+                    <h3 class="portfolio__categorySubtitle">Software Suite Logos, 2003</h3>
+                    <img class="portfolio__sample" alt="SimWright StereoGIS software logo" src="portfolio/StereoGIS.png">
+                    <img class="portfolio__sample" alt="SimWright Spidar software logo" src="portfolio/Spidar.png">
+                    <img class="portfolio__sample" alt="SimWright CityClick software logo" src="portfolio/CityClick.png">
+                    <h3 class="portfolio__categorySubtitle">Radio Station Logo, 1999</h3>
+                    <img class="portfolio__sample" alt="1999 Power 88 Radio Station logo" src="portfolio/Power88.png">
+                    <!-- <img class="portfolio__sample" alt="2001 Beach Side Lawn Services logo" src="portfolio/bsls.png"> -->
+                </div>
+                <div id="Portfolio-websites" class="portfolio__category">
+                    <h2 class="portfolio__categoryTitle">Websites</h2>
+                    <h3 class="portfolio__categorySubtitle">Personal Website, 2014</h3>
+                    <p><i><a href="https://jasonhumphries.info/estherandjason/" target="_blank">jasonhumphries.info/estherandjason/</a></i></p>
+                    <a href="https://jasonhumphries.info/estherandjason/" target="_blank"><img class="portfolio__sample" alt="" src="img/website-estherandjason-2014.jpg"></a>
+                    <h3 class="portfolio__categorySubtitle">School Website, 2007</h3>
+                    <a><img class="portfolio__sample" alt="" src="img/website-centralacademy-2007.jpg"></a>
+                    <h3 class="portfolio__categorySubtitle">Business Website, 2004</h3>
+                    <p><i><a href="http://SimWright.com" target="_blank">SimWright.com</a></i></p>
+                    <a href="http://SimWright.com" target="_blank"><img class="portfolio__sample" alt="" src="img/website-simwright-2004.jpg"></a>
+                </div>
+                <div id="Portfolio-print" class="portfolio__category">
+                    <h2 class="portfolio__categoryTitle">Print</h2>
+                    <h3 class="portfolio__categorySubtitle">Annual Cover, 2009</h3>
+                    <img class="portfolio__sample" alt="2009 Central Academy annual cover" src="portfolio/CAyearbook09.png">
+                </div>
         </section>
     </main>
     <footer id="contact">

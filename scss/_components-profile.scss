@@ -1,0 +1,131 @@
+/***** COMPONENTS-PROFILE *****/
+
+
+/*-- PROFILE --*/
+
+.profile__box {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width:$width-medium) {
+    .profile__box {
+        margin: 0 auto;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:$width-wide) {
+    .profile__box {
+        width: var(--width-wide);
+    }
+}
+
+.profile__photobox {
+    position: relative;
+    display: block;
+    /*overflow:;*/
+    width: 60%;
+    height: auto;
+    margin: -0.35rem auto;
+    -webkit-animation: 1s ease-in-out 10ms 1 profilerotate;
+    animation: 1s ease-in-out 10ms 1 profilerotate;
+}
+
+.profile__photobox img {
+    box-shadow: 0 0 1.5rem rgba(30, 30, 30, 0.25);
+}
+
+@media screen and (min-width: $width-medium) {
+
+    .profile__photobox {
+        margin: -1rem -0.5rem -1rem -1rem;
+        width: calc(100% + 2rem);
+    }
+    .profile__photobox img {
+        box-shadow: 0 0 3rem rgba(30, 30, 30, 0.25);
+    }
+}
+
+@-webkit-keyframes profilerotate {
+    from {
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+        left: -3em;
+        top: 0;
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes profilerotate {
+    from {
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        position: relative;
+    }
+}
+
+
+.photobox__image {
+    z-index: 3;
+    position: relative;
+    display: block;
+    border-radius: 100%;
+    width: calc(100% - 1.5rem);
+    border: 0.75rem solid #fff;
+}
+
+
+.profile__skills {
+    width: 100%;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+@media screen and (min-width:$width-medium) {
+    .photobox__image {
+        width: calc(100% - 2.2rem);
+        border: 1.1rem solid #fff;
+    }
+    .profile__skills {
+        width: 50%;
+    }
+}
+
+.skillset {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    padding: 1em 1em 1em 1.5em;
+}
+
+.skillset__head {
+    width: 100%;
+}
+
+.skillset__details {
+    width: 0px;
+    heigth: 0px;
+    display: none;
+}
+
+
+
+.skillset:hover .skillset__details {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+

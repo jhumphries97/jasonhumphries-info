@@ -10,26 +10,39 @@
 
 .profile {
     background: var(--color-lightgray);
-    box-shadow: 0 0 1.5rem rgba(30,30,30,0.25);
+    box-shadow: 0 0 1.5rem rgba(30, 30, 30, 0.25);
+    width: calc(100% + 1em);
 }
 
-.about {}
+.about {
+    padding-top: 2rem;
+    text-align: center;
+}
 
 .portfolio {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    flex-wrap: nowrap;
+    padding: 1em;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
 }
 
 
 @media screen and (min-width:$width-medium) {
-    .profile{
-    box-shadow: 0 0 3rem rgba(30,30,30,0.5);
+    .profile,
+    main {
+        box-shadow: 0 0 3rem rgba(30, 30, 30, 0.5);
     }
     .portfolio {
-        -webkit-perspective: calc(var(--width-small) * 2);
-        perspective: calc(var(--width-small) * 2);
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
     }
 }

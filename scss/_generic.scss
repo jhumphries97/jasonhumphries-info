@@ -37,7 +37,8 @@ section {
 }
 
 footer {
-    margin: 2rem 0;
+    margin: 2em 1em;
+    width: calc(100% - 2em);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,6 +56,8 @@ footer {
         max-width: var(--width-wide);
     }
 }
+
+
 
 
 
@@ -100,6 +103,8 @@ p {
 li {}
 
 blockquote {}
+
+
 
 
 /*-- LINKS --*/
