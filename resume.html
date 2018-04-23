@@ -212,20 +212,16 @@ document.write(year);
         </div>
     </div>
     <!-- <div id="print"> <a href="#" onclick="javascript:window.print();"><img src="img/resume_print.png" alt="Print" align="absmiddle" border="0"/></a> </div> -->
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-18459814-1']);
-    _gaq.push(['_trackPageview']);
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23999409-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+  gtag('config', 'UA-23999409-5');
+</script>
 </body>
 
 </html>
