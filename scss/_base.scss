@@ -33,8 +33,7 @@
 
 
 @media screen and (min-width:$width-medium) {
-    .profile,
-    main {
+    .profile {
         box-shadow: 0 0 3rem rgba(30, 30, 30, 0.5);
     }
     .portfolio {
