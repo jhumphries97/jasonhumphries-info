@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="Front-end Web Developer and Graphic Designer with over 15 years experience in web development, graphic design and project management.">
     <meta name="Keywords" content="jason,humphries,frontend,front,end,developer,humphreys,web,website,graphics,design,internet,technology,tech,professional,consultant">
@@ -17,9 +15,19 @@
     <link href="favicon.png" rel="icon" async>
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Titillium+Web:300" rel="stylesheet" async>
     <style type="text/css">
-        html {font-size:100%;}
-        [href="#main"] {position:absolute;top:0;right:100%;}
-        [href="#main"]:focus {right:auto;}
+    html {
+        font-size: 100%;
+    }
+
+    [href="#main"] {
+        position: absolute;
+        top: 0;
+        right: 100%;
+    }
+
+    [href="#main"]:focus {
+        right: auto;
+    }
     </style>
     <title>Jason Humphries Portfolio Site</title>
 </head>
@@ -30,8 +38,8 @@
         <nav id="navigation">
             <h1 class="navigation__title">Jason Humphries</h1>
             <a title="contact info" class="navigation__link navigation__link--contact" href="#contact">Contact</a>
+            <a title="Download a Low Resolution Portfolio" class="navigation__link navigation__link--portfolio" href="#Portfolio">Portfolio</a>
             <a title="View my resume" class="navigation__link navigation__link--resume" href="resume.html">Resum&eacute;</a>
-            <a title="Download a Low Resolution Portfolio" class="navigation__link navigation__link--portfolio" href="#Portfolio" target="_blank">Portfolio</a>
             <!-- <a title="portfolio high res" class="navigation__link navigation__link--portfolio-hr" href="JasonHumphries_DesignPortfolio_lowres.pdf" target="_blank">Portfolio (high res)</a> -->
         </nav>
     </header>
@@ -132,12 +140,26 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23999409-5"></script>
 <script>
+// Google Analytics Tag Script
 window.dataLayer = window.dataLayer || [];
 
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 
 gtag('config', 'UA-23999409-5');
+
+// Sticky Navbar
+window.onscroll = function() { stickyNav() };
+var navbar = document.getElementById("navigation");
+var navHeight = navbar.offsetHeight;
+
+function stickyNav() {
+    if (window.pageYOffset >= navHeight) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
 </script>
 
 </html>

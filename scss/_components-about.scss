@@ -2,9 +2,12 @@
 
 
 /*-- ABOUT --*/
+
 .description {
-    margin-bottom: 2rem;
+    margin:0 auto 2rem;
 }
+
+
 
 /*-- portfolio --*/
 
@@ -12,6 +15,7 @@
     width: 100%;
     max-width: $width-wide;
     margin: 0 auto;
+    padding: 1rem 0 1rem 1rem;
 }
 
 
@@ -96,34 +100,21 @@
 
 
 
+/* .portfolio__categoryTitle,
+.portfolio__categorySubtitle,
+.portfolio__sample {
+     width: 100%;
+ }*/
 
-
-
-
-/* .portfolio__categoryTitle,*/
-
-
-/* .portfolio__categorySubtitle,*/
-
-
-/* .portfolio__sample {*/
-
-
-/*     width: 100%;*/
-
-
-/* }*/
-
-.portfolio__title {
-    padding: 1rem;
-}
 
 .portfolio__sample {
-    min-height: 10rem;
+    width: calc(100% - 1rem);
+    padding: 0 0.5rem;
 }
 
 @media screen and (min-width:$width-medium) {
-    .portfolio__sample {}
-
-    .portfolio:hover .portfolio__sample {}
+    .portfolio__sample {
+        min-height: 10rem;
+        max-width: 60%;
+    }
 }

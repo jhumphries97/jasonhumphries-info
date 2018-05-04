@@ -24,9 +24,6 @@
 }
 
 .profile__photobox {
-    position: relative;
-    display: block;
-    /*overflow:;*/
     width: 60%;
     height: auto;
     margin: -0.35rem auto;
@@ -106,7 +103,15 @@
     display: flex;
     flex: 1 0 auto;
     flex-direction: column;
-    padding: 1em 1em 1em 1.5em;
+    padding: 1em;
+    width: calc(100% - 2em);
+}
+
+@media screen and (min-width:$width-medium) {
+    .skillset {
+        padding: 1em 1em 1em 1.5em;
+        width: calc(100% - 2.5em);
+    }
 }
 
 .skillset__head {
@@ -127,5 +132,3 @@
     display: block;
     overflow: hidden;
 }
-
-

@@ -21,7 +21,6 @@
 
 .portfolio {
     width: 100%;
-    padding: 1em;
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
@@ -37,6 +36,7 @@
         box-shadow: 0 0 3rem rgba(30, 30, 30, 0.5);
     }
     .portfolio {
+        padding: 1em;
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 1fr;

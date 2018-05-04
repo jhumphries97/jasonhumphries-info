@@ -74,15 +74,14 @@
 }
 
 
-/* .skillset:hover {*/
 
-
-/*     background-color: var(--color-darkblue);*/
-
-
-/* }*/
+/* .skillset:hover {
+  background-color: var(--color-darkblue);
+   }*/
 
 .skillset:hover *,
-a:hover, a:focus {
-    color: #fff ;
+a:hover,
+a:focus {
+    color: #fff;
 }
+
