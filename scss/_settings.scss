@@ -1,13 +1,15 @@
 /***** SETTINGS *****/
 
+
 /*-- SASS break widths --*/
+
 $width-wide: 64em;
 $width-medium: 40em;
 $width-small: 20em;
 
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Titillium+Web:300');
 :root {
-	/*-- fonts --*/
+    /*-- fonts --*/
     --font-cursive: 'Architects Daughter', cursive;
     --font-sans: 'Titillium Web', sans-serif;
     /*-- colors --*/
@@ -23,3 +25,4 @@ $width-small: 20em;
     --width-medium: #{$width-medium};
     --width-small: #{$width-small};
 }
+

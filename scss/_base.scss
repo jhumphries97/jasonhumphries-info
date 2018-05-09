@@ -11,7 +11,13 @@
 .profile {
     background: var(--color-lightgray);
     box-shadow: 0 0 1.5rem rgba(30, 30, 30, 0.25);
-    width: calc(100% + 1em);
+    width: 100%;
+}
+
+@media screen and (min-width:$width-medium) {
+    .profile {
+        box-shadow: 0 0 3rem rgba(30, 30, 30, 0.5);
+    }
 }
 
 .about {
@@ -20,28 +26,6 @@
 }
 
 .portfolio {
-    width: 100%;
-    margin: 0 auto;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-}
-
-
-@media screen and (min-width:$width-medium) {
-    .profile {
-        box-shadow: 0 0 3rem rgba(30, 30, 30, 0.5);
-    }
-    .portfolio {
-        padding: 1em;
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    }
+    padding-top: 2rem;
+    text-align: center;
 }
