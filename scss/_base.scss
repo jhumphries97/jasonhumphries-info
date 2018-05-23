@@ -10,13 +10,13 @@
 
 .profile {
     background: var(--color-lightgray);
-    box-shadow: 0 0 1.5rem rgba(30, 30, 30, 0.25);
+    box-shadow: 0 0 1.5rem var(--color-shadow);
     width: 100%;
 }
 
 @media screen and (min-width:$width-medium) {
     .profile {
-        box-shadow: 0 0 3rem rgba(30, 30, 30, 0.5);
+        box-shadow: 0 0 3rem var(--color-shadow);
     }
 }
 

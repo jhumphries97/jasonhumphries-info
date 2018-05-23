@@ -35,8 +35,8 @@
 
 .sticky {
     position: fixed;
-    background-color: #fff;
-    box-shadow: 0 0 1rem #000;
+    background-color: var(--color-white);
+    box-shadow: 0 0 1rem var(--color-shadow);
     z-index: 100;
     font-size: 85%;
 

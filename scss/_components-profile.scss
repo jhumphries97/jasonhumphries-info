@@ -32,7 +32,7 @@
 }
 
 .profile__photobox img {
-    box-shadow: 0 0 1.5rem rgba(30, 30, 30, 0.25);
+    box-shadow: 0 0 1.5rem var(--color-shadow);
 }
 
 @media screen and (min-width: $width-medium) {
@@ -42,7 +42,7 @@
         width: calc(100% + 2rem);
     }
     .profile__photobox img {
-        box-shadow: 0 0 3rem rgba(30, 30, 30, 0.25);
+        box-shadow: 0 0 3rem var(--color-shadow);
     }
 }
 

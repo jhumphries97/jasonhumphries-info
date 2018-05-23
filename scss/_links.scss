@@ -1,4 +1,4 @@
-/***** OBJECT SETTINGS *****/
+/***** LINK SETTINGS *****/
 
 .navigation__link,
 .contactlink,
@@ -16,6 +16,8 @@
     transition-duration: 0.5s;
 }
 
+
+
 .navigation__link::before,
 .contactlink::before,
 .sociallink::before,
@@ -29,10 +31,6 @@
     right: 0;
     bottom: 0;
     background: var(--color-darkblue);
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
     transition-property: -webkit-transform;
     transition-property: transform;
     transition-property: transform, -webkit-transform;
@@ -40,8 +38,16 @@
     transition-timing-function: ease-out;
 }
 
-.portfolio__navLink a::before {
-    transition-duration: 1s;
+/*--  Horizontal animation --*/
+.navigation__link::before,
+.contactlink::before,
+.sociallink::before,
+.skillset::before,
+.portfolio__navLink a::before{
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
 }
 
 .navigation__link:hover::before,
@@ -49,39 +55,42 @@
 .contactlink:hover::before,
 .contactlink:focus::before,
 .sociallink:hover::before,
-.sociallink:focus::before,
-.portfolio__navLink a:hover::before,
-.portfolio__navLink a:focus::before {
+.sociallink:focus::before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
+/*--  Vertical animation --*/
 
-.skillset::before {
+.skillset::before,
+.portfolio__navLink a::before {
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
 
+.portfolio__navLink a::before {
+    transition-duration: 1s;
+}
+
 .skillset:hover::before,
-.skillset:focus::before {
+.skillset:focus::before,
+.portfolio__navLink a:hover::before,
+.portfolio__navLink a:focus::before {
     z-index: -2;
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
+} 
 
-
-
-/* .skillset:hover {
-  background-color: var(--color-darkblue);
-   }*/
+// .skillset:hover {
+//  background-color: var(--color-darkblue);
+//   }
 
 .skillset:hover *,
 a:hover,
 a:focus {
     color: #fff;
 }
-
