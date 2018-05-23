@@ -1,0 +1,109 @@
+/***** COMPONENTS-FOOTER *****/
+
+
+/*-- FOOTER --*/
+
+.footer__contactinfo,
+.footer__social {
+    width: 100%;
+}
+
+@media screen and (min-width:$width-medium) {
+    .footer__contactinfo,
+    .footer__social {
+        width: 50%;
+    }
+}
+
+.contactinfo__list,
+.social__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:$width-medium) {
+    .contactinfo__list,
+    .social__list {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.contactinfo__list li,
+.social__list li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+
+.contactname,
+.contactinfo__li .contactlink,
+.social__li .sociallink {
+    display: block;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 0;
+}
+
+.sociallink:hover {
+    color: #fff;
+}
+
+
+
+
+
+/* .contactlink--phone:hover {*/
+
+
+/*     border-radius: 0.5em;*/
+
+
+/* }*/
+
+.sociallink--twitter::before {
+    background-color: #1DA1F2;
+}
+
+.sociallink--linkedin::before {
+    background-color: #0077B5;
+}
+
+.sociallink--aboutme::before {
+    background-color: #000;
+}
+
+.sociallink--github::before {
+    background-color: #6F2D8B;
+}
+
+.sociallink--goodreads::before {
+    background-color: #382110;
+}
+
+.contact__arrow {
+    display: block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    left: -50vw;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+#contact:target .contact__arrow {
+    left: -1rem;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.downarrow__path {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--color-darkblue);
+}

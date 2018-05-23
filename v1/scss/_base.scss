@@ -1,0 +1,31 @@
+/***** BASE *****/
+
+
+/* -- Page SECTIONS --*/
+
+.title {
+    color: var(--color-darkblue);
+    font-family: var(--font-cursive);
+}
+
+.profile {
+    background: var(--color-lightgray);
+    box-shadow: 0 0 1.5rem var(--color-shadow);
+    width: 100%;
+}
+
+@media screen and (min-width:$width-medium) {
+    .profile {
+        box-shadow: 0 0 3rem var(--color-shadow);
+    }
+}
+
+.about {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.portfolio {
+    padding-top: 2rem;
+    text-align: center;
+}

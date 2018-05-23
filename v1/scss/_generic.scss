@@ -1,0 +1,142 @@
+/***** GENERIC *****/
+
+
+/*-- PAGE SETUP --*/
+
+html {
+    font-family: var(--font-sans);
+    color: var(--color-darkblue);
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 2rem 0;
+}
+
+header {
+    width: 100%;
+    background: var(--color-white);
+}
+
+nav {
+    position:relative;
+    width: 100%;
+    display: flex;
+    flex: 1 0 50%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+footer {
+    margin: 2em 1em;
+    width: calc(100% - 2em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width:$width-medium) {
+    nav {
+        flex: 1 0 auto;
+        align-items: baseline;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2rem auto;
+        max-width: var(--width-wide);
+    }
+}
+
+
+/*-- HEADINGS --*/
+
+h1 {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.25em;
+}
+
+h1,
+h2,
+h3 {
+    display: block;
+}
+
+
+
+
+
+/*-- TEXT --*/
+
+p,
+li {
+    line-height: 1.75em;
+}
+
+p {
+    max-width: 60rem;
+}
+
+main p {
+    display:block;
+    padding:1rem;
+}
+
+@media screen and (min-width:$width-medium) {
+    main p {
+        margin: 0 auto 1rem;
+    }
+}
+
+li {}
+
+blockquote {}
+
+
+
+
+
+/*-- LINKS --*/
+
+a {
+    transition: color 0 !important;
+}
+
+a,
+a:link {
+    color: var(--color-darkblue);
+}
+
+a:visited {
+    color: var(--color-bluehighlight);
+}
+
+a:active {
+    color: var(--color-black);
+}
+a:hover, a:focus {
+    background-color: #aaa;
+}

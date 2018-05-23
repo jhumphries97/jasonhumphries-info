@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Front-end Web Developer and Graphic Designer with over 15 years experience in web development, graphic design and project management.">
+    <meta name="Keywords" content="jason,humphries,frontend,front,end,developer,humphreys,web,website,graphics,design,internet,technology,tech,professional,consultant">
+    <!-- css3-mediaqueries.js for IE8 or older -->
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="favicon.png" rel="icon" async>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Titillium+Web:300" rel="stylesheet" async>
+    <style type="text/css">
+    html {
+        font-size: 100%;
+    }
+
+    [href="#main"] {
+        position: absolute;
+        top: 0;
+        right: 100%;
+    }
+
+    [href="#main"]:focus {
+        right: auto;
+    }
+    </style>
+    <title>Jason Humphries Portfolio Site</title>
+</head>
+
+<body>
+    <a href="#main">Skip to main content</a>
+    <header class="header">
+        <nav id="navigation">
+            <h1 class="navigation__title">Jason Humphries</h1>
+            <a title="contact info" class="navigation__link navigation__link--contact" href="#contact">Contact</a>
+            <a title="Download a Low Resolution Portfolio" class="navigation__link navigation__link--portfolio" href="#Portfolio">Portfolio</a>
+            <a title="View my resume" class="navigation__link navigation__link--resume" href="resume.html">Resum&eacute;</a>
+            <!-- <a title="portfolio high res" class="navigation__link navigation__link--portfolio-hr" href="JasonHumphries_DesignPortfolio_lowres.pdf" target="_blank">Portfolio (high res)</a> -->
+        </nav>
+    </header>
+    <main id="main" class="main">
+        <p class="description">Front-end Web Developer and Graphic Designer with over 15 years experience in web development, graphic design and project management.</p>
+        <!-- <p>&nbsp;</p> -->
+        <section class="profile row">
+            <div class="profile__box">
+                <div class="profile__photobox"><img class="photobox__image" src="img/profile.jpg"></div>
+                <div class="profile__skills ">
+                    <div class="skillset skillset--1">
+                        <h2 class="skillset__head">Front-end Web Developer</h2>
+                        <div class="skillset__details">HTML &bull; CSS &bull; BEM &bull; SASS &bull; ITCSS</div>
+                    </div>
+                    <div class="skillset skillset--2">
+                        <h2 class="skillset__head">Graphic Designer</h2>
+                        <div class="skillset__details">Photoshop &bull; Illustrator &bull; Hand Drawn</div>
+                    </div>
+                    <div class="skillset skillset--3">
+                        <h2 class="skillset__head">Project Manager</h2>
+                        <div class="skillset__details">Planning &amp; Execution &bull; Define Requirements &amp; Specifications &bull; Create Guidelines &bull; Design Efficient Processes </div>
+                    </div>
+                    <div class="skillset skillset--4">
+                        <h2 class="skillset__head">Solution Provider</h2>
+                        <div class="skillset__details">Basic Technology Support &bull; Advanced Document Formatting &bull; Server Management &bull; Network Adminstration</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio row">
+            <!--<div class="strengths"></div>
+            <div class="reading"></div>-->
+            <h2 id="Portfolio" class="portfolio__title">Portfolio</h2>
+            <div class="portfolio__box">
+                <ul class="portfolio__nav">
+                    <li class="portfolio__navLink"><a href="#Portfolio-logos">Logos</a></li>
+                    <li class="portfolio__navLink"><a href="#Portfolio-websites">Websites</a></li>
+                    <li class="portfolio__navLink"><a href="#Portfolio-print">Print</a></li>
+                </ul>
+                <!-- <div id="Portfolio-none" class="portfolio__category">
+                    &nbsp;
+                </div> -->
+                <div class="portfolio__category">
+                    <div id="Portfolio-logos" class="portfolio__category--group">
+                        <h2 class="portfolio__categoryTitle">Logos</h2>
+                        <h3 class="portfolio__categorySubtitle">Software Suite Logos, 2003</h3>
+                        <img class="portfolio__sample" alt="SimWright StereoGIS software logo" src="portfolio/StereoGIS.png">
+                        <img class="portfolio__sample" alt="SimWright Spidar software logo" src="portfolio/Spidar.png">
+                        <img class="portfolio__sample" alt="SimWright CityClick software logo" src="portfolio/CityClick.png">
+                        <h3 class="portfolio__categorySubtitle">Radio Station Logo, 1999</h3>
+                        <img class="portfolio__sample" alt="1999 Power 88 Radio Station logo" src="portfolio/Power88.png">
+                        <!-- <img class="portfolio__sample" alt="2001 Beach Side Lawn Services logo" src="portfolio/bsls.png"> -->
+                    </div>
+                    <div id="Portfolio-websites" class="portfolio__category--group">
+                        <h2 class="portfolio__categoryTitle">Websites</h2>
+                        <h3 class="portfolio__categorySubtitle">Personal Website, 2014</h3>
+                        <p><i><a href="https://jasonhumphries.info/estherandjason/" target="_blank">jasonhumphries.info/estherandjason/</a></i></p>
+                        <a href="https://jasonhumphries.info/estherandjason/" target="_blank"><img class="portfolio__sample" alt="" src="img/website-estherandjason-2014.jpg"></a>
+                        <h3 class="portfolio__categorySubtitle">School Website, 2007</h3>
+                        <a><img class="portfolio__sample" alt="" src="img/website-centralacademy-2007.jpg"></a>
+                        <h3 class="portfolio__categorySubtitle">Business Website, 2004</h3>
+                        <p><i><a href="http://SimWright.com" target="_blank">SimWright.com</a></i></p>
+                        <a href="http://SimWright.com" target="_blank"><img class="portfolio__sample" alt="" src="img/website-simwright-2004.jpg"></a>
+                    </div>
+                    <div id="Portfolio-print" class="portfolio__category--group">
+                        <h2 class="portfolio__categoryTitle">Print</h2>
+                        <h3 class="portfolio__categorySubtitle">Annual Cover, 2009</h3>
+                        <img class="portfolio__sample" alt="2009 Central Academy annual cover" src="portfolio/CAyearbook09.png">
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="contact__arrow">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                <path class="downarrow__path" d="M128,126.5V0H71v126L0,87.8v57.6l100,53.8l100-53.8V87.8L128,126.5z" />
+            </svg>
+        </div>
+        <section class="footer__contactinfo">
+            <ul class="contactinfo__list">
+                <li class="contactinfo__li">
+                    <h2 class="contactname">Jason Humphries</h2></li>
+                <li class="contactinfo__li"><a title="Email me" class="contactlink contactlink--email" href="mailto:jhumphries97@gmail.com">jhumphries97@gmail.com</a></li>
+                <li class="contactinfo__li"><a title="Call me" class="contactlink contactlink--phone" href="tel:6623618680">662-361-8680</a></li>
+            </ul>
+        </section>
+        <section class="footer__social">
+            <ul class="social__list">
+                <li class="social__li"><a title="GitHub profile page" class="sociallink sociallink--github" href="https://github.com/jhumphries97" target="_blank">GitHub</a></li>
+                <li class="social__li"><a title="Twitter profile page" class="sociallink sociallink--twitter" href="https://twitter.com/quietman97" target="_blank">Twitter</a></li>
+                <li class="social__li"><a title="LinkedIn profile page" class="sociallink sociallink--linkedin" href="https://www.linkedin.com/in/jasonhumphries" target="_blank">LinkedIn</a></li>
+                <li class="social__li"><a title="AboutMe profile page" class="sociallink sociallink--aboutme" href="https://about.me/jasonhumphries" target="_blank">About.me</a></li>
+                <li class="social__li"><a title="What I'm reading" class="sociallink sociallink--goodreads" href="https://www.goodreads.com/user/show/58736279-jason" target="_blank">GoodReads</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23999409-5"></script>
+<script>
+// Google Analytics Tag Script
+window.dataLayer = window.dataLayer || [];
+
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+
+gtag('config', 'UA-23999409-5');
+
+// Sticky Navbar
+window.onscroll = function() { stickyNav() };
+var navbar = document.getElementById("navigation");
+var navHeight = navbar.offsetHeight;
+
+function stickyNav() {
+    if (window.pageYOffset >= navHeight) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+</script>
+
+</html>
