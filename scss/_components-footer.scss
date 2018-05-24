@@ -58,6 +58,7 @@
 
 
 
+
 /* .contactlink--phone:hover {*/
 
 
@@ -66,23 +67,23 @@
 
 /* }*/
 
-.sociallink--twitter::before {
+.sociallink--twitter:hover {
     background-color: #1DA1F2;
 }
 
-.sociallink--linkedin::before {
+.sociallink--linkedin:hover {
     background-color: #0077B5;
 }
 
-.sociallink--aboutme::before {
+.sociallink--aboutme:hover {
     background-color: #000;
 }
 
-.sociallink--github::before {
+.sociallink--github:hover {
     background-color: #6F2D8B;
 }
 
-.sociallink--goodreads::before {
+.sociallink--goodreads:hover {
     background-color: #382110;
 }
 
