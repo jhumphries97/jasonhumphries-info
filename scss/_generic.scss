@@ -122,21 +122,22 @@ blockquote {}
 /*-- LINKS --*/
 
 a {
-    transition: color 0 !important;
+    transition: ease-in-out 0.2s !important;
 }
 
 a,
 a:link {
+
     color: var(--color-darkblue);
 }
 
 a:visited {
-    color: var(--color-bluehighlight);
+    color: var(--color-purple);
 }
 
 a:active {
-    color: var(--color-black);
+    color: var(--color-redrose);
 }
 a:hover, a:focus {
-    background-color: #aaa;
+    background: var(--color-darkblue);
 }
