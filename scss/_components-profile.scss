@@ -15,6 +15,7 @@
     .profile__box {
         margin: 0 auto;
         flex-direction: row;
+        max-width: var(--width-wide);
     }
 }
 
@@ -83,13 +84,13 @@
 
 
 .profile__skills {
-    width: 100%;
+    width: calc(100% - 3em);
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 0;
 }
 
@@ -101,9 +102,9 @@
     .profile__skills {
         width: 100%;
         -ms-grid-rows: 1fr;
-            grid-template-rows: 1fr;
+        grid-template-rows: 1fr;
         -ms-grid-columns: 1fr 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -111,24 +112,29 @@
     display: flex;
     flex: 1 0 auto;
     flex-direction: column;
-    padding: 1em; /*width: calc(100% - 2em);*/
+    padding: 1em;
+    /*width: calc(100% - 2em);*/
 }
 
 @media screen and (min-width:$width-medium) {
     .skillset {
-        padding: 1em 1em 1em 1.5em; /*width: calc(100% - 2.5em);*/
+        padding: 1em 1em 1em 1.5em;
+        /*width: calc(100% - 2.5em);*/
         -webkit-transform: skewX(-11deg);
-                transform: skewX(-11deg);
+        transform: skewX(-11deg);
     }
     .skillset * {
         -webkit-transform: rotate(-89deg) skewX(-11deg);
-                transform: rotate(-89deg) skewX(-11deg);
+        transform: rotate(-89deg) skewX(-11deg);
         transition: ease-in-out 0.2s;
     }
     .skillset:hover *,
     .skillset:focus * {
         -webkit-transform: rotate(0deg) skewX(0deg);
-                transform: rotate(0deg) skewX(0deg);
+        transform: rotate(0deg) skewX(0deg);
+    }
+    .skillset:hover {
+        box-shadow: 0 0 1.5rem var(--color-shadow);
     }
 }
 
@@ -150,6 +156,11 @@
 
 .skillset__head {
     width: 100%;
+}
+
+.skillset__details {
+    padding: 0;
+    list-style: inside;
 }
 
 @media screen and (min-width:$width-medium) {
