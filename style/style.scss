@@ -1,11 +1,11 @@
-@import "../scss/settings";
+@import "../scss/settings"; //variables, colors, sizes
 /*@import "../scss/tools";*/
-@import "../scss/generic";
-@import "../scss/base";
-@import "../scss/links";
-@import "../scss/components-header";
-@import "../scss/components-profile";
-@import "../scss/components-about";
-@import "../scss/components-portfolio";
-@import "../scss/components-footer";
-@import "../scss/trumps";
+@import "../scss/generic"; //unclassed HTML elements 
+@import "../scss/base"; //Page sections basic framework
+@import "../scss/effects"; // custom effects
+@import "../scss/components-header"; // header styles
+@import "../scss/components-profile"; // profile block styles
+@import "../scss/components-about"; // about section styles
+@import "../scss/components-portfolio"; // portfolio section styles
+@import "../scss/components-footer"; // footer section styles
+@import "../scss/trumps"; // style overrides

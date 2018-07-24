@@ -9,10 +9,9 @@
 }
 
 .profile {
-    background: var(--color-darkblue);
+    background: var(--color-lightgray);
     box-shadow: 0 0 1.5rem var(--color-shadow);
     width: 100%;
-    color: var(--color-white);
 }
 
 @media screen and (min-width:$width-medium) {

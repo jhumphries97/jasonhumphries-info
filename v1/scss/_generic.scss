@@ -17,16 +17,14 @@ body {
 header {
     width: 100%;
     background: var(--color-white);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex: 0 1 auto;
 }
 
 nav {
+    position:relative;
+    width: 100%;
     display: flex;
     flex: 1 0 50%;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
@@ -51,7 +49,6 @@ footer {
 
 @media screen and (min-width:$width-medium) {
     nav {
-        flex-direction: row;
         flex: 1 0 auto;
         align-items: baseline;
     }
@@ -62,7 +59,6 @@ footer {
         max-width: var(--width-wide);
     }
 }
-
 
 
 /*-- HEADINGS --*/
@@ -93,7 +89,6 @@ h3 {
 
 
 
-
 /*-- TEXT --*/
 
 p,
@@ -106,8 +101,8 @@ p {
 }
 
 main p {
-    display: block;
-    padding: 1rem;
+    display:block;
+    padding:1rem;
 }
 
 @media screen and (min-width:$width-medium) {
@@ -124,29 +119,24 @@ blockquote {}
 
 
 
-
 /*-- LINKS --*/
 
 a {
-    transition: ease-in-out 0.2s !important;
+    transition: color 0 !important;
 }
 
 a,
 a:link {
-
     color: var(--color-darkblue);
 }
 
 a:visited {
-    color: var(--color-purple);
+    color: var(--color-bluehighlight);
 }
 
 a:active {
-    color: var(--color-redrose);
+    color: var(--color-black);
 }
-
-a:hover,
-a:focus {
-    background: var(--color-darkblue);
-    color: var(--color-white);
+a:hover, a:focus {
+    background-color: #aaa;
 }

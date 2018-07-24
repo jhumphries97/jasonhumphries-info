@@ -1,0 +1,38 @@
+/***** SETTINGS *****/
+
+
+/*-- SASS break widths --*/
+
+$width-wide: 64em;
+$width-medium: 40em;
+$width-small: 20em;
+
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Titillium+Web:300');
+:root {
+    /*-- fonts --*/
+    --font-cursive: 'Architects Daughter', cursive;
+    --font-sans: 'Titillium Web', sans-serif;
+    /*-- colors --*/
+    --color-darkblue: rgb(0, 47, 95);
+    --color-purple: rgb(44, 1, 76);
+    --color-lightgreen: rgb(190, 247, 31);
+    --color-dragonfly: rgb(47, 133, 88);
+    --color-redrose: rgb(244, 78, 94);
+
+    --color-lightgray: #ededed;
+    --color-bluehighlight: #2C5E92;
+    --color-brightblue: #004892;
+    --color-gray: #868686;
+    --color-black: #1d1d1d;
+    --color-white: #ffffff;
+
+    --color-shadow: rgba(30,30,30,0.5);
+
+
+
+
+    /*-- break-widths --*/
+    --width-wide: #{$width-wide};
+    --width-medium: #{$width-medium};
+    --width-small: #{$width-small};
+}

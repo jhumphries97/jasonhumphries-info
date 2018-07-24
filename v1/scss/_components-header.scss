@@ -1,17 +1,6 @@
 /***** COMPONENTS-HEADER *****/
-.header{
-    
-}
-.header__logo{
- display:flex;
- flex-direction:row;
 
-}
-.logo__icon {
-    width: 2em;
-    height: 2em;
-}
-.logo__title {
+.navigation__title {
     padding: 0 1rem;
     width: calc(100% - 2rem);
 }
