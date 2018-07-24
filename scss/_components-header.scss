@@ -2,8 +2,14 @@
 .header{
     
 }
-.logo__icon{
+.header__logo{
+ display:flex;
+ flex-direction:row;
 
+}
+.logo__icon {
+    width: 2em;
+    height: 2em;
 }
 .logo__title {
     padding: 0 1rem;
